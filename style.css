@@ -11,7 +11,7 @@
 .placeholder-copy span{font:10px "DM Sans";margin-top:18px;letter-spacing:.08em}
 .profile-bottom strong{font:700 19px/1 "Space Grotesk"}
 .profile-bottom span{font-size:8px;line-height:1.7;color:#aaa}
-.project-image{height:510px;position:relative;overflow:hidden;background:#ded9cd;transition:transform .25s ease}
+.project-image{height:500px; width: 400px;position:relative;overflow:hidden;background:#ded9cd;transition:transform .25s ease}
 .project-image img{width:100%;height:100%;object-fit:cover;display:block}
 .project-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:35px;color:#171715}
 .project-placeholder span{font-size:9px;letter-spacing:.16em}
@@ -24,4 +24,7 @@
  .profile-card{height:430px;width:300px}
  .profile-photo{height:275px}
  .project-image{height:430px}
+}
+.mybrandname{
+    color: #9cb800;
 }

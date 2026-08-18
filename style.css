@@ -11,8 +11,20 @@
 .placeholder-copy span{font:10px "DM Sans";margin-top:18px;letter-spacing:.08em}
 .profile-bottom strong{font:700 19px/1 "Space Grotesk"}
 .profile-bottom span{font-size:8px;line-height:1.7;color:#aaa}
-.project-image{height:500px; width: 400px;position:relative;overflow:hidden;background:#ded9cd;transition:transform .25s ease}
-.project-image img{width:100%;height:100%;object-fit:cover;display:block}
+.project-image {
+    width: min(400px, 100%);
+    aspect-ratio: 4 / 5;
+    position: relative;
+    overflow: hidden;
+    background: #ded9cd;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
 .project-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:space-between;padding:35px;color:#171715}
 .project-placeholder span{font-size:9px;letter-spacing:.16em}
 .project-placeholder strong{font:800 clamp(50px,5vw,78px)/.82 "Space Grotesk";letter-spacing:-.06em}
@@ -20,11 +32,23 @@
 .project-image.image-placeholder .project-placeholder{display:flex}
 .project-image:not(.image-placeholder) .project-placeholder{display:none}
 .project-image.image-placeholder img{display:none}
-@media(max-width:800px){
- .profile-card{height:430px;width:300px}
- .profile-photo{height:275px}
- .project-image{height:430px}
+@media (max-width: 800px) {
+    .profile-card {
+        width: 300px;
+        height: auto;
+    }
+
+    .profile-photo {
+        height: 275px;
+    }
+
+    .project-image {
+        width: 100%;
+        aspect-ratio: 4 / 5;
+        height: auto;
+    }
 }
+
 .mybrandname{
     color: #9cb800;
 }

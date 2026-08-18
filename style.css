@@ -13,7 +13,6 @@
 .profile-bottom span{font-size:8px;line-height:1.7;color:#aaa}
 .project-image {
     width: min(400px, 100%);
-    aspect-ratio: 4 / 5;
     position: relative;
     overflow: hidden;
     background: #ded9cd;
